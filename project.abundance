@@ -382,7 +382,12 @@
                     "x": 0.98,
                     "y": 0.5,
                     "uniqueID": 1726078880302,
-                    "ioValues": []
+                    "ioValues": [
+                        {
+                            "name": "number or geometry",
+                            "ioValue": 1726079911461
+                        }
+                    ]
                 },
                 {
                     "atomType": "Input",
@@ -484,6 +489,49 @@
                             "ioValue": -5
                         }
                     ]
+                },
+                {
+                    "atomType": "Move",
+                    "name": "Move",
+                    "x": 0.5,
+                    "y": 0.1343669250645995,
+                    "uniqueID": 1726079890515,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1726079741954
+                        },
+                        {
+                            "name": "xDist",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "yDist",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "zDist",
+                            "ioValue": 3
+                        }
+                    ]
+                },
+                {
+                    "atomType": "Join",
+                    "name": "Assembly",
+                    "x": 0.6087484811664641,
+                    "y": 0.6020671834625323,
+                    "uniqueID": 1726079911461,
+                    "ioValues": [
+                        {
+                            "name": "3D shape 1",
+                            "ioValue": 1726079890515
+                        },
+                        {
+                            "name": "3D shape 2",
+                            "ioValue": 1726079849044
+                        }
+                    ],
+                    "unionType": "Assembly"
                 }
             ],
             "allConnectors": [
@@ -535,10 +583,38 @@
                     "ap2Primary": true,
                     "ap1ID": 1726079741954,
                     "ap2ID": 1726079849044
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1726079741954,
+                    "ap2ID": 1726079890515
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "3D shape 2",
+                    "ap2Primary": false,
+                    "ap1ID": 1726079849044,
+                    "ap2ID": 1726079911461
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "3D shape 1",
+                    "ap2Primary": false,
+                    "ap1ID": 1726079890515,
+                    "ap2ID": 1726079911461
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "number or geometry",
+                    "ap2Primary": false,
+                    "ap1ID": 1726079911461,
+                    "ap2ID": 1726078880302
                 }
             ],
             "fileTypeVersion": 1,
-            "compiledBom": {}
+            "compiledBom": []
         },
         {
             "atomType": "Input",
@@ -555,6 +631,185 @@
             "y": 0.751937984496124,
             "uniqueID": 1726079525135,
             "ioValues": []
+        },
+        {
+            "atomType": "Molecule",
+            "name": "Middle Shelf",
+            "x": 0.3602673147023086,
+            "y": 0.8785529715762275,
+            "uniqueID": 1726079956628,
+            "ioValues": [
+                {
+                    "name": "Wood Thickness",
+                    "ioValue": 0.75
+                }
+            ],
+            "topLevel": false,
+            "allAtoms": [
+                {
+                    "atomType": "Output",
+                    "name": "Output",
+                    "x": 0.98,
+                    "y": 0.5,
+                    "uniqueID": 1726079956952,
+                    "ioValues": []
+                },
+                {
+                    "atomType": "Input",
+                    "name": "Wood Thickness",
+                    "x": 0.013333333333333334,
+                    "y": 0.32299741602067183,
+                    "uniqueID": 1726079956479,
+                    "ioValues": []
+                },
+                {
+                    "atomType": "Rectangle",
+                    "name": "Rectangle",
+                    "x": 0.25455650060753343,
+                    "y": 0.3850129198966408,
+                    "uniqueID": 1726079957022,
+                    "ioValues": [
+                        {
+                            "name": "x length",
+                            "ioValue": -0.5
+                        },
+                        {
+                            "name": "y length",
+                            "ioValue": 10
+                        }
+                    ]
+                },
+                {
+                    "atomType": "Equation",
+                    "name": "y - 2*x",
+                    "x": 0.11846901579586877,
+                    "y": 0.4237726098191214,
+                    "uniqueID": 1726079956520,
+                    "ioValues": [
+                        {
+                            "name": "y",
+                            "ioValue": 1
+                        },
+                        {
+                            "name": "x",
+                            "ioValue": 0.75
+                        }
+                    ],
+                    "currentEquation": "y - 2*x"
+                },
+                {
+                    "atomType": "Input",
+                    "name": "depth",
+                    "x": 0.013333333333333334,
+                    "y": 0.7958656330749354,
+                    "uniqueID": 1726079956571,
+                    "ioValues": []
+                },
+                {
+                    "atomType": "Extrude",
+                    "name": "Extrude",
+                    "x": 0.3663426488456865,
+                    "y": 0.17054263565891473,
+                    "uniqueID": 1726079956438,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1726079957022
+                        },
+                        {
+                            "name": "height",
+                            "ioValue": 0.75
+                        }
+                    ]
+                },
+                {
+                    "atomType": "Move",
+                    "name": "Move",
+                    "x": 0.5,
+                    "y": 0.1343669250645995,
+                    "uniqueID": 1726079957020,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1726079956438
+                        },
+                        {
+                            "name": "xDist",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "yDist",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "zDist",
+                            "ioValue": 3
+                        }
+                    ]
+                },
+                {
+                    "atomType": "Input",
+                    "name": "Wood Thickness",
+                    "x": 0.013333333333333334,
+                    "y": 0.32299741602067183,
+                    "uniqueID": 1726079956152,
+                    "ioValues": []
+                },
+                {
+                    "atomType": "Input",
+                    "name": "width",
+                    "x": 0.013333333333333334,
+                    "y": 0.607235142118863,
+                    "uniqueID": 1726079956186,
+                    "ioValues": []
+                }
+            ],
+            "allConnectors": [
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "x",
+                    "ap2Primary": false,
+                    "ap1ID": 1726079956479,
+                    "ap2ID": 1726079956520
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "height",
+                    "ap2Primary": false,
+                    "ap1ID": 1726079956479,
+                    "ap2ID": 1726079956438
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1726079957022,
+                    "ap2ID": 1726079956438
+                },
+                {
+                    "ap1Name": "result",
+                    "ap2Name": "x length",
+                    "ap2Primary": false,
+                    "ap1ID": 1726079956520,
+                    "ap2ID": 1726079957022
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "y length",
+                    "ap2Primary": false,
+                    "ap1ID": 1726079956571,
+                    "ap2ID": 1726079957022
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1726079956438,
+                    "ap2ID": 1726079957020
+                }
+            ],
+            "fileTypeVersion": 1,
+            "compiledBom": []
         }
     ],
     "allConnectors": [
