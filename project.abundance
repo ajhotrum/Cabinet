@@ -635,8 +635,8 @@
         {
             "atomType": "Molecule",
             "name": "Middle Shelf",
-            "x": 0.3602673147023086,
-            "y": 0.8785529715762275,
+            "x": 0.35479951397326853,
+            "y": 0.8733850129198967,
             "uniqueID": 1726079956628,
             "ioValues": [
                 {
@@ -652,7 +652,12 @@
                     "x": 0.98,
                     "y": 0.5,
                     "uniqueID": 1726079956952,
-                    "ioValues": []
+                    "ioValues": [
+                        {
+                            "name": "number or geometry",
+                            "ioValue": 1726080130970
+                        }
+                    ]
                 },
                 {
                     "atomType": "Input",
@@ -747,7 +752,7 @@
                     "ioValues": [
                         {
                             "name": "geometry",
-                            "ioValue": ""
+                            "ioValue": 1726079956438
                         },
                         {
                             "name": "xDist",
@@ -759,7 +764,7 @@
                         },
                         {
                             "name": "zDist",
-                            "ioValue": 0
+                            "ioValue": 37
                         }
                     ]
                 }
@@ -787,6 +792,13 @@
                     "ap2ID": 1726079957022
                 },
                 {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1726079956438,
+                    "ap2ID": 1726080130970
+                },
+                {
                     "ap1Name": "number or geometry",
                     "ap2Name": "x length",
                     "ap2Primary": false,
@@ -799,6 +811,20 @@
                     "ap2Primary": false,
                     "ap1ID": 1726079956186,
                     "ap2ID": 1726080098051
+                },
+                {
+                    "ap1Name": "result",
+                    "ap2Name": "zDist",
+                    "ap2Primary": false,
+                    "ap1ID": 1726080098051,
+                    "ap2ID": 1726080130970
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "number or geometry",
+                    "ap2Primary": false,
+                    "ap1ID": 1726080130970,
+                    "ap2ID": 1726079956952
                 }
             ],
             "fileTypeVersion": 1,
@@ -819,6 +845,13 @@
             "ap2Primary": false,
             "ap1ID": 1726078069920,
             "ap2ID": 1726078880722
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "Wood Thickness",
+            "ap2Primary": false,
+            "ap1ID": 1726078069920,
+            "ap2ID": 1726079956628
         },
         {
             "ap1Name": "number or geometry",
