@@ -26,7 +26,12 @@
             "x": 0.98,
             "y": 0.5,
             "uniqueID": 1726077851215,
-            "ioValues": []
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": 1726080412304
+                }
+            ]
         },
         {
             "atomType": "Molecule",
@@ -833,9 +838,38 @@
             ],
             "fileTypeVersion": 1,
             "compiledBom": []
+        },
+        {
+            "atomType": "Join",
+            "name": "Assembly",
+            "x": 0.6269744835965978,
+            "y": 0.4056847545219638,
+            "uniqueID": 1726080412304,
+            "ioValues": [
+                {
+                    "name": "3D shape 1",
+                    "ioValue": 1726077896990
+                },
+                {
+                    "name": "3D shape 2",
+                    "ioValue": 1726078880722
+                },
+                {
+                    "name": "3D shape 3",
+                    "ioValue": 1726079956628
+                }
+            ],
+            "unionType": "Assembly"
         }
     ],
     "allConnectors": [
+        {
+            "ap1Name": "Geometry",
+            "ap2Name": "3D shape 1",
+            "ap2Primary": false,
+            "ap1ID": 1726077896990,
+            "ap2ID": 1726080412304
+        },
         {
             "ap1Name": "number or geometry",
             "ap2Name": "thickness",
@@ -858,6 +892,13 @@
             "ap2ID": 1726079956628
         },
         {
+            "ap1Name": "Geometry",
+            "ap2Name": "3D shape 2",
+            "ap2Primary": false,
+            "ap1ID": 1726078880722,
+            "ap2ID": 1726080412304
+        },
+        {
             "ap1Name": "number or geometry",
             "ap2Name": "width",
             "ap2Primary": false,
@@ -898,10 +939,24 @@
             "ap2Primary": false,
             "ap1ID": 1726079525135,
             "ap2ID": 1726079956628
+        },
+        {
+            "ap1Name": "Geometry",
+            "ap2Name": "3D shape 3",
+            "ap2Primary": false,
+            "ap1ID": 1726079956628,
+            "ap2ID": 1726080412304
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": 1726080412304,
+            "ap2ID": 1726077851215
         }
     ],
     "unitsKey": "Inches",
     "fileTypeVersion": 1,
-    "compiledBom": {},
+    "compiledBom": [],
     "filetypeVersion": 1
 }
