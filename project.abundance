@@ -4,7 +4,12 @@
     "x": 0,
     "y": 0,
     "uniqueID": 1726077787029,
-    "ioValues": [],
+    "ioValues": [
+        {
+            "name": "Wood Thickness",
+            "ioValue": 10
+        }
+    ],
     "topLevel": true,
     "allAtoms": [
         {
@@ -33,23 +38,6 @@
                     "ioValues": []
                 },
                 {
-                    "atomType": "RegularPolygon",
-                    "name": "RegularPolygon",
-                    "x": 0.1172539489671932,
-                    "y": 0.19638242894056848,
-                    "uniqueID": 1726077950743,
-                    "ioValues": [
-                        {
-                            "name": "number of sides",
-                            "ioValue": 6
-                        },
-                        {
-                            "name": "diameter",
-                            "ioValue": 10
-                        }
-                    ]
-                },
-                {
                     "atomType": "Rectangle",
                     "name": "Rectangle",
                     "x": 0.11239368165249088,
@@ -58,18 +46,51 @@
                     "ioValues": [
                         {
                             "name": "x length",
-                            "ioValue": 10
+                            "ioValue": 36
                         },
                         {
                             "name": "y length",
                             "ioValue": 10
                         }
                     ]
+                },
+                {
+                    "atomType": "Extrude",
+                    "name": "Extrude",
+                    "x": 0.2752126366950182,
+                    "y": 0.39276485788113696,
+                    "uniqueID": 1726078020510,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1726077969107
+                        },
+                        {
+                            "name": "height",
+                            "ioValue": 2
+                        }
+                    ]
                 }
             ],
-            "allConnectors": [],
+            "allConnectors": [
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1726077969107,
+                    "ap2ID": 1726078020510
+                }
+            ],
             "fileTypeVersion": 1,
             "compiledBom": {}
+        },
+        {
+            "atomType": "Input",
+            "name": "Wood Thickness",
+            "x": 0.013333333333333334,
+            "y": 0.32299741602067183,
+            "uniqueID": 1726078069920,
+            "ioValues": []
         }
     ],
     "allConnectors": [],
