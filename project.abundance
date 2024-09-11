@@ -7,7 +7,7 @@
     "ioValues": [
         {
             "name": "Wood Thickness",
-            "ioValue": 10
+            "ioValue": 0.75
         }
     ],
     "topLevel": true,
@@ -26,7 +26,12 @@
             "x": 0.244228432563791,
             "y": 0.38242894056847543,
             "uniqueID": 1726077896990,
-            "ioValues": [],
+            "ioValues": [
+                {
+                    "name": "thickness",
+                    "ioValue": 0.75
+                }
+            ],
             "topLevel": false,
             "allAtoms": [
                 {
@@ -67,9 +72,17 @@
                         },
                         {
                             "name": "height",
-                            "ioValue": 2
+                            "ioValue": 0.75
                         }
                     ]
+                },
+                {
+                    "atomType": "Input",
+                    "name": "thickness",
+                    "x": 0.013333333333333334,
+                    "y": 0.607235142118863,
+                    "uniqueID": 1726078147919,
+                    "ioValues": []
                 }
             ],
             "allConnectors": [
@@ -78,6 +91,13 @@
                     "ap2Name": "geometry",
                     "ap2Primary": true,
                     "ap1ID": 1726077969107,
+                    "ap2ID": 1726078020510
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "height",
+                    "ap2Primary": false,
+                    "ap1ID": 1726078147919,
                     "ap2ID": 1726078020510
                 }
             ],
@@ -93,7 +113,15 @@
             "ioValues": []
         }
     ],
-    "allConnectors": [],
+    "allConnectors": [
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "thickness",
+            "ap2Primary": false,
+            "ap1ID": 1726078069920,
+            "ap2ID": 1726077896990
+        }
+    ],
     "unitsKey": "Inches",
     "fileTypeVersion": 1,
     "compiledBom": {},
