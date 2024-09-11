@@ -30,6 +30,10 @@
                 {
                     "name": "thickness",
                     "ioValue": 0.75
+                },
+                {
+                    "name": "width",
+                    "ioValue": 10
                 }
             ],
             "topLevel": false,
@@ -118,7 +122,7 @@
                     "ioValues": [
                         {
                             "name": "geometry",
-                            "ioValue": ""
+                            "ioValue": 1726078334298
                         },
                         {
                             "name": "xDist",
@@ -133,6 +137,32 @@
                             "ioValue": 0
                         }
                     ]
+                },
+                {
+                    "atomType": "Input",
+                    "name": "width",
+                    "x": 0.013333333333333334,
+                    "y": 0.7906976744186047,
+                    "uniqueID": 1726078514280,
+                    "ioValues": []
+                },
+                {
+                    "atomType": "Equation",
+                    "name": "x + y",
+                    "x": 0.34325637910085055,
+                    "y": 0.7080103359173127,
+                    "uniqueID": 1726078568741,
+                    "ioValues": [
+                        {
+                            "name": "x",
+                            "ioValue": 1
+                        },
+                        {
+                            "name": "y",
+                            "ioValue": 1
+                        }
+                    ],
+                    "currentEquation": "x + y"
                 }
             ],
             "allConnectors": [
@@ -156,6 +186,13 @@
                     "ap2Primary": false,
                     "ap1ID": 1726078147919,
                     "ap2ID": 1726078020510
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1726078334298,
+                    "ap2ID": 1726078401355
                 }
             ],
             "fileTypeVersion": 1,
