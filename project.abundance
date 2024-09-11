@@ -33,7 +33,7 @@
                 },
                 {
                     "name": "width",
-                    "ioValue": 10
+                    "ioValue": 36
                 }
             ],
             "topLevel": false,
@@ -117,7 +117,7 @@
                     "atomType": "Move",
                     "name": "Move",
                     "x": 0.5036452004860268,
-                    "y": 0.18604651162790697,
+                    "y": 0.20930232558139536,
                     "uniqueID": 1726078401355,
                     "ioValues": [
                         {
@@ -126,7 +126,7 @@
                         },
                         {
                             "name": "xDist",
-                            "ioValue": 0
+                            "ioValue": 18
                         },
                         {
                             "name": "yDist",
@@ -148,21 +148,56 @@
                 },
                 {
                     "atomType": "Equation",
-                    "name": "x + y",
+                    "name": "W/2",
                     "x": 0.34325637910085055,
                     "y": 0.7080103359173127,
                     "uniqueID": 1726078568741,
                     "ioValues": [
                         {
-                            "name": "x",
-                            "ioValue": 1
-                        },
-                        {
-                            "name": "y",
-                            "ioValue": 1
+                            "name": "W",
+                            "ioValue": 36
                         }
                     ],
-                    "currentEquation": "x + y"
+                    "currentEquation": "W/2"
+                },
+                {
+                    "atomType": "Equation",
+                    "name": "w/-2",
+                    "x": 0.3718104495747266,
+                    "y": 0.8552971576227391,
+                    "uniqueID": 1726078639437,
+                    "ioValues": [
+                        {
+                            "name": "w",
+                            "ioValue": 36
+                        }
+                    ],
+                    "currentEquation": "w/-2"
+                },
+                {
+                    "atomType": "Move",
+                    "name": "Move",
+                    "x": 0.5006075334143378,
+                    "y": 0.5943152454780362,
+                    "uniqueID": 1726078662770,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1726078334298
+                        },
+                        {
+                            "name": "xDist",
+                            "ioValue": -18
+                        },
+                        {
+                            "name": "yDist",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "zDist",
+                            "ioValue": 0
+                        }
+                    ]
                 }
             ],
             "allConnectors": [
@@ -193,6 +228,41 @@
                     "ap2Primary": true,
                     "ap1ID": 1726078334298,
                     "ap2ID": 1726078401355
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1726078334298,
+                    "ap2ID": 1726078662770
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "W",
+                    "ap2Primary": false,
+                    "ap1ID": 1726078514280,
+                    "ap2ID": 1726078568741
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "w",
+                    "ap2Primary": false,
+                    "ap1ID": 1726078514280,
+                    "ap2ID": 1726078639437
+                },
+                {
+                    "ap1Name": "result",
+                    "ap2Name": "xDist",
+                    "ap2Primary": false,
+                    "ap1ID": 1726078568741,
+                    "ap2ID": 1726078401355
+                },
+                {
+                    "ap1Name": "result",
+                    "ap2Name": "xDist",
+                    "ap2Primary": false,
+                    "ap1ID": 1726078639437,
+                    "ap2ID": 1726078662770
                 }
             ],
             "fileTypeVersion": 1,
