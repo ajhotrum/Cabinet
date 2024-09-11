@@ -11,6 +11,10 @@
         },
         {
             "name": "width",
+            "ioValue": 36
+        },
+        {
+            "name": "name1",
             "ioValue": 10
         }
     ],
@@ -37,7 +41,7 @@
                 },
                 {
                     "name": "width",
-                    "ioValue": 10
+                    "ioValue": 36
                 }
             ],
             "topLevel": false,
@@ -135,7 +139,7 @@
                         },
                         {
                             "name": "xDist",
-                            "ioValue": 5
+                            "ioValue": 18
                         },
                         {
                             "name": "yDist",
@@ -164,7 +168,7 @@
                     "ioValues": [
                         {
                             "name": "W",
-                            "ioValue": 10
+                            "ioValue": 36
                         }
                     ],
                     "currentEquation": "W/2"
@@ -178,7 +182,7 @@
                     "ioValues": [
                         {
                             "name": "w",
-                            "ioValue": 10
+                            "ioValue": 36
                         }
                     ],
                     "currentEquation": "w/-2"
@@ -196,7 +200,7 @@
                         },
                         {
                             "name": "xDist",
-                            "ioValue": -5
+                            "ioValue": -18
                         },
                         {
                             "name": "yDist",
@@ -337,7 +341,7 @@
                 },
                 {
                     "name": "width",
-                    "ioValue": 10
+                    "ioValue": 36
                 }
             ],
             "topLevel": false,
@@ -367,7 +371,7 @@
                     "ioValues": [
                         {
                             "name": "x length",
-                            "ioValue": 10
+                            "ioValue": 34.5
                         },
                         {
                             "name": "y length",
@@ -377,7 +381,7 @@
                 },
                 {
                     "atomType": "Equation",
-                    "name": "x + y",
+                    "name": "y - 2*x",
                     "x": 0.11846901579586877,
                     "y": 0.4237726098191214,
                     "uniqueID": 1726079190985,
@@ -388,10 +392,10 @@
                         },
                         {
                             "name": "y",
-                            "ioValue": 10
+                            "ioValue": 36
                         }
                     ],
-                    "currentEquation": ""
+                    "currentEquation": "y - 2*x"
                 },
                 {
                     "atomType": "Input",
@@ -411,6 +415,13 @@
                     "ap2ID": 1726079190985
                 },
                 {
+                    "ap1Name": "result",
+                    "ap2Name": "x length",
+                    "ap2Primary": false,
+                    "ap1ID": 1726079190985,
+                    "ap2ID": 1726079153325
+                },
+                {
                     "ap1Name": "number or geometry",
                     "ap2Name": "y",
                     "ap2Primary": false,
@@ -425,8 +436,16 @@
             "atomType": "Input",
             "name": "width",
             "x": 0.013333333333333334,
-            "y": 0.772609819121447,
+            "y": 0.607235142118863,
             "uniqueID": 1726079289561,
+            "ioValues": []
+        },
+        {
+            "atomType": "Input",
+            "name": "name1",
+            "x": 0.013333333333333334,
+            "y": 0.751937984496124,
+            "uniqueID": 1726079525135,
             "ioValues": []
         }
     ],
