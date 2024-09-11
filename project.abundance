@@ -14,7 +14,7 @@
             "ioValue": 36
         },
         {
-            "name": "name1",
+            "name": "depth",
             "ioValue": 10
         }
     ],
@@ -42,6 +42,10 @@
                 {
                     "name": "width",
                     "ioValue": 36
+                },
+                {
+                    "name": "name1",
+                    "ioValue": 10
                 }
             ],
             "topLevel": false,
@@ -229,6 +233,14 @@
                         }
                     ],
                     "unionType": "Assembly"
+                },
+                {
+                    "atomType": "Input",
+                    "name": "name1",
+                    "x": 0.013333333333333334,
+                    "y": 0.9483204134366926,
+                    "uniqueID": 1726079641979,
+                    "ioValues": []
                 }
             ],
             "allConnectors": [
@@ -287,6 +299,13 @@
                     "ap2Primary": false,
                     "ap1ID": 1726078514280,
                     "ap2ID": 1726078639437
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "x length",
+                    "ap2Primary": false,
+                    "ap1ID": 1726078514280,
+                    "ap2ID": 1726077969107
                 },
                 {
                     "ap1Name": "result",
@@ -442,7 +461,7 @@
         },
         {
             "atomType": "Input",
-            "name": "name1",
+            "name": "depth",
             "x": 0.013333333333333334,
             "y": 0.751937984496124,
             "uniqueID": 1726079525135,
