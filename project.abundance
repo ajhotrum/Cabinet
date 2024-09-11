@@ -329,7 +329,7 @@
             "ioValues": [
                 {
                     "name": "Wood Thickness",
-                    "ioValue": 10
+                    "ioValue": 0.75
                 }
             ],
             "topLevel": false,
@@ -349,6 +349,23 @@
                     "y": 0.32299741602067183,
                     "uniqueID": 1726078880175,
                     "ioValues": []
+                },
+                {
+                    "atomType": "Rectangle",
+                    "name": "Rectangle",
+                    "x": 0.25455650060753343,
+                    "y": 0.3850129198966408,
+                    "uniqueID": 1726079153325,
+                    "ioValues": [
+                        {
+                            "name": "x length",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "y length",
+                            "ioValue": 10
+                        }
+                    ]
                 }
             ],
             "allConnectors": [],
@@ -363,6 +380,13 @@
             "ap2Primary": false,
             "ap1ID": 1726078069920,
             "ap2ID": 1726077896990
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "Wood Thickness",
+            "ap2Primary": false,
+            "ap1ID": 1726078069920,
+            "ap2ID": 1726078880722
         }
     ],
     "unitsKey": "Inches",
