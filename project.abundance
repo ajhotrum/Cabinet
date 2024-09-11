@@ -44,7 +44,12 @@
                     "x": 0.98,
                     "y": 0.5,
                     "uniqueID": 1726077897403,
-                    "ioValues": []
+                    "ioValues": [
+                        {
+                            "name": "number or geometry",
+                            "ioValue": 1726078775379
+                        }
+                    ]
                 },
                 {
                     "atomType": "Rectangle",
@@ -295,10 +300,17 @@
                     "ap2Primary": false,
                     "ap1ID": 1726078662770,
                     "ap2ID": 1726078775379
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "number or geometry",
+                    "ap2Primary": false,
+                    "ap1ID": 1726078775379,
+                    "ap2ID": 1726077897403
                 }
             ],
             "fileTypeVersion": 1,
-            "compiledBom": {}
+            "compiledBom": []
         },
         {
             "atomType": "Input",
@@ -307,6 +319,41 @@
             "y": 0.32299741602067183,
             "uniqueID": 1726078069920,
             "ioValues": []
+        },
+        {
+            "atomType": "Molecule",
+            "name": "Middle Shelf",
+            "x": 0.3219927095990279,
+            "y": 0.5891472868217054,
+            "uniqueID": 1726078880722,
+            "ioValues": [
+                {
+                    "name": "Wood Thickness",
+                    "ioValue": 10
+                }
+            ],
+            "topLevel": false,
+            "allAtoms": [
+                {
+                    "atomType": "Output",
+                    "name": "Output",
+                    "x": 0.98,
+                    "y": 0.5,
+                    "uniqueID": 1726078880302,
+                    "ioValues": []
+                },
+                {
+                    "atomType": "Input",
+                    "name": "Wood Thickness",
+                    "x": 0.013333333333333334,
+                    "y": 0.32299741602067183,
+                    "uniqueID": 1726078880175,
+                    "ioValues": []
+                }
+            ],
+            "allConnectors": [],
+            "fileTypeVersion": 1,
+            "compiledBom": {}
         }
     ],
     "allConnectors": [
