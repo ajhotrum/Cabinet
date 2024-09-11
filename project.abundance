@@ -8,6 +8,10 @@
         {
             "name": "Wood Thickness",
             "ioValue": 0.75
+        },
+        {
+            "name": "name1",
+            "ioValue": 10
         }
     ],
     "topLevel": true,
@@ -366,11 +370,45 @@
                             "ioValue": 10
                         }
                     ]
+                },
+                {
+                    "atomType": "Equation",
+                    "name": "x + y",
+                    "x": 0.11846901579586877,
+                    "y": 0.4237726098191214,
+                    "uniqueID": 1726079190985,
+                    "ioValues": [
+                        {
+                            "name": "x",
+                            "ioValue": 0.75
+                        },
+                        {
+                            "name": "y",
+                            "ioValue": 1
+                        }
+                    ],
+                    "currentEquation": ""
                 }
             ],
-            "allConnectors": [],
+            "allConnectors": [
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "x",
+                    "ap2Primary": false,
+                    "ap1ID": 1726078880175,
+                    "ap2ID": 1726079190985
+                }
+            ],
             "fileTypeVersion": 1,
             "compiledBom": {}
+        },
+        {
+            "atomType": "Input",
+            "name": "name1",
+            "x": 0.013333333333333334,
+            "y": 0.772609819121447,
+            "uniqueID": 1726079289561,
+            "ioValues": []
         }
     ],
     "allConnectors": [
