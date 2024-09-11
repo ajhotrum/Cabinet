@@ -44,7 +44,7 @@
                     "ioValue": 36
                 },
                 {
-                    "name": "name1",
+                    "name": "depth",
                     "ioValue": 10
                 }
             ],
@@ -236,7 +236,7 @@
                 },
                 {
                     "atomType": "Input",
-                    "name": "name1",
+                    "name": "depth",
                     "x": 0.013333333333333334,
                     "y": 0.9483204134366926,
                     "uniqueID": 1726079641979,
@@ -334,6 +334,13 @@
                     "ap2Primary": false,
                     "ap1ID": 1726078775379,
                     "ap2ID": 1726077897403
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "y length",
+                    "ap2Primary": false,
+                    "ap1ID": 1726079641979,
+                    "ap2ID": 1726077969107
                 }
             ],
             "fileTypeVersion": 1,
@@ -350,8 +357,8 @@
         {
             "atomType": "Molecule",
             "name": "Middle Shelf",
-            "x": 0.3219927095990279,
-            "y": 0.5891472868217054,
+            "x": 0.32563791008505466,
+            "y": 0.6020671834625323,
             "uniqueID": 1726078880722,
             "ioValues": [
                 {
@@ -361,6 +368,10 @@
                 {
                     "name": "width",
                     "ioValue": 36
+                },
+                {
+                    "name": "depth",
+                    "ioValue": 10
                 }
             ],
             "topLevel": false,
@@ -423,6 +434,31 @@
                     "y": 0.5607235142118864,
                     "uniqueID": 1726079354424,
                     "ioValues": []
+                },
+                {
+                    "atomType": "Input",
+                    "name": "depth",
+                    "x": 0.013333333333333334,
+                    "y": 0.7958656330749354,
+                    "uniqueID": 1726079686557,
+                    "ioValues": []
+                },
+                {
+                    "atomType": "Extrude",
+                    "name": "Extrude",
+                    "x": 0.3663426488456865,
+                    "y": 0.17054263565891473,
+                    "uniqueID": 1726079741954,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1726079153325
+                        },
+                        {
+                            "name": "height",
+                            "ioValue": 0.75
+                        }
+                    ]
                 }
             ],
             "allConnectors": [
@@ -432,6 +468,20 @@
                     "ap2Primary": false,
                     "ap1ID": 1726078880175,
                     "ap2ID": 1726079190985
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "height",
+                    "ap2Primary": false,
+                    "ap1ID": 1726078880175,
+                    "ap2ID": 1726079741954
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1726079153325,
+                    "ap2ID": 1726079741954
                 },
                 {
                     "ap1Name": "result",
@@ -446,6 +496,13 @@
                     "ap2Primary": false,
                     "ap1ID": 1726079354424,
                     "ap2ID": 1726079190985
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "y length",
+                    "ap2Primary": false,
+                    "ap1ID": 1726079686557,
+                    "ap2ID": 1726079153325
                 }
             ],
             "fileTypeVersion": 1,
@@ -495,6 +552,20 @@
             "ap2Name": "width",
             "ap2Primary": false,
             "ap1ID": 1726079289561,
+            "ap2ID": 1726078880722
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "depth",
+            "ap2Primary": false,
+            "ap1ID": 1726079525135,
+            "ap2ID": 1726077896990
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "depth",
+            "ap2Primary": false,
+            "ap1ID": 1726079525135,
             "ap2ID": 1726078880722
         }
     ],
