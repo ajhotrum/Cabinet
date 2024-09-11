@@ -576,20 +576,21 @@
                 },
                 {
                     "atomType": "Tag",
-                    "name": "",
+                    "name": ",cutLayout",
                     "x": 0.6142162818955043,
                     "y": 0.5968992248062015,
                     "uniqueID": 1726080796254,
                     "ioValues": [
                         {
                             "name": "geometry",
-                            "ioValue": 1726079741954
+                            "ioValue": 1726083113069
                         }
                     ],
                     "tags": [
-                        ""
+                        "",
+                        "cutLayout"
                     ],
-                    "cutTag": false
+                    "cutTag": true
                 },
                 {
                     "atomType": "Rectangle",
@@ -611,8 +612,8 @@
                 {
                     "atomType": "Extrude",
                     "name": "Extrude",
-                    "x": 0.38699878493317136,
-                    "y": 0.6589147286821706,
+                    "x": 0.3608748481166464,
+                    "y": 0.5813953488372093,
                     "uniqueID": 1726083091172,
                     "ioValues": [
                         {
@@ -622,6 +623,78 @@
                         {
                             "name": "height",
                             "ioValue": 0.75
+                        }
+                    ]
+                },
+                {
+                    "atomType": "Join",
+                    "name": "Fusion",
+                    "x": 0.5467800729040098,
+                    "y": 0.39018087855297157,
+                    "uniqueID": 1726083113069,
+                    "ioValues": [
+                        {
+                            "name": "3D shape 2",
+                            "ioValue": 1726079741954
+                        },
+                        {
+                            "name": "3D shape 4",
+                            "ioValue": 1726083212515
+                        },
+                        {
+                            "name": "3D shape 5",
+                            "ioValue": 1726083208837
+                        }
+                    ],
+                    "unionType": "Fusion"
+                },
+                {
+                    "atomType": "Move",
+                    "name": "Move",
+                    "x": 0.4380315917375456,
+                    "y": 0.813953488372093,
+                    "uniqueID": 1726083208837,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1726083091172
+                        },
+                        {
+                            "name": "xDist",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "yDist",
+                            "ioValue": 3
+                        },
+                        {
+                            "name": "zDist",
+                            "ioValue": 0
+                        }
+                    ]
+                },
+                {
+                    "atomType": "Move",
+                    "name": "Move",
+                    "x": 0.5,
+                    "y": 0.6408268733850129,
+                    "uniqueID": 1726083212515,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1726083091172
+                        },
+                        {
+                            "name": "xDist",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "yDist",
+                            "ioValue": -3
+                        },
+                        {
+                            "name": "zDist",
+                            "ioValue": 0
                         }
                     ]
                 }
@@ -685,10 +758,10 @@
                 },
                 {
                     "ap1Name": "geometry",
-                    "ap2Name": "geometry",
-                    "ap2Primary": true,
+                    "ap2Name": "3D shape 2",
+                    "ap2Primary": false,
                     "ap1ID": 1726079741954,
-                    "ap2ID": 1726080796254
+                    "ap2ID": 1726083113069
                 },
                 {
                     "ap1Name": "geometry",
@@ -731,6 +804,41 @@
                     "ap2Primary": true,
                     "ap1ID": 1726083066450,
                     "ap2ID": 1726083091172
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1726083091172,
+                    "ap2ID": 1726083208837
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1726083091172,
+                    "ap2ID": 1726083212515
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1726083113069,
+                    "ap2ID": 1726080796254
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "3D shape 5",
+                    "ap2Primary": false,
+                    "ap1ID": 1726083208837,
+                    "ap2ID": 1726083113069
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "3D shape 4",
+                    "ap2Primary": false,
+                    "ap1ID": 1726083212515,
+                    "ap2ID": 1726083113069
                 }
             ],
             "fileTypeVersion": 1,
@@ -894,7 +1002,7 @@
                 },
                 {
                     "atomType": "Tag",
-                    "name": "",
+                    "name": ",cutLayout",
                     "x": 0.7235722964763062,
                     "y": 0.6124031007751938,
                     "uniqueID": 1726080817758,
@@ -905,9 +1013,10 @@
                         }
                     ],
                     "tags": [
-                        ""
+                        "",
+                        "cutLayout"
                     ],
-                    "cutTag": false
+                    "cutTag": true
                 }
             ],
             "allConnectors": [
