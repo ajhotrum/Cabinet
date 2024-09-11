@@ -642,6 +642,14 @@
                 {
                     "name": "Wood Thickness",
                     "ioValue": 0.75
+                },
+                {
+                    "name": "width",
+                    "ioValue": 36
+                },
+                {
+                    "name": "depth",
+                    "ioValue": 10
                 }
             ],
             "topLevel": false,
@@ -685,14 +693,6 @@
                     ]
                 },
                 {
-                    "atomType": "Input",
-                    "name": "depth",
-                    "x": 0.013333333333333334,
-                    "y": 0.7958656330749354,
-                    "uniqueID": 1726079956571,
-                    "ioValues": []
-                },
-                {
                     "atomType": "Extrude",
                     "name": "Extrude",
                     "x": 0.3663426488456865,
@@ -718,30 +718,18 @@
                     "ioValues": []
                 },
                 {
-                    "atomType": "Input",
-                    "name": "width",
-                    "x": 0.013333333333333334,
-                    "y": 0.607235142118863,
-                    "uniqueID": 1726079956186,
-                    "ioValues": []
-                },
-                {
                     "atomType": "Equation",
-                    "name": "x + y",
-                    "x": 0.4896719319562576,
-                    "y": 0.4832041343669251,
+                    "name": "x /2",
+                    "x": 0.4908869987849332,
+                    "y": 0.4780361757105943,
                     "uniqueID": 1726080098051,
                     "ioValues": [
                         {
                             "name": "x",
                             "ioValue": 36
-                        },
-                        {
-                            "name": "y",
-                            "ioValue": 1
                         }
                     ],
-                    "currentEquation": "x + y"
+                    "currentEquation": "x /2"
                 },
                 {
                     "atomType": "Move",
@@ -764,9 +752,25 @@
                         },
                         {
                             "name": "zDist",
-                            "ioValue": 37
+                            "ioValue": 18
                         }
                     ]
+                },
+                {
+                    "atomType": "Input",
+                    "name": "width",
+                    "x": 0.013333333333333334,
+                    "y": 0.6718346253229974,
+                    "uniqueID": 1726080307409,
+                    "ioValues": []
+                },
+                {
+                    "atomType": "Input",
+                    "name": "depth",
+                    "x": 0.013333333333333334,
+                    "y": 0.8708010335917312,
+                    "uniqueID": 1726080322795,
+                    "ioValues": []
                 }
             ],
             "allConnectors": [
@@ -785,32 +789,11 @@
                     "ap2ID": 1726079956438
                 },
                 {
-                    "ap1Name": "number or geometry",
-                    "ap2Name": "y length",
-                    "ap2Primary": false,
-                    "ap1ID": 1726079956571,
-                    "ap2ID": 1726079957022
-                },
-                {
                     "ap1Name": "geometry",
                     "ap2Name": "geometry",
                     "ap2Primary": true,
                     "ap1ID": 1726079956438,
                     "ap2ID": 1726080130970
-                },
-                {
-                    "ap1Name": "number or geometry",
-                    "ap2Name": "x length",
-                    "ap2Primary": false,
-                    "ap1ID": 1726079956186,
-                    "ap2ID": 1726079957022
-                },
-                {
-                    "ap1Name": "number or geometry",
-                    "ap2Name": "x",
-                    "ap2Primary": false,
-                    "ap1ID": 1726079956186,
-                    "ap2ID": 1726080098051
                 },
                 {
                     "ap1Name": "result",
@@ -825,6 +808,27 @@
                     "ap2Primary": false,
                     "ap1ID": 1726080130970,
                     "ap2ID": 1726079956952
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "x length",
+                    "ap2Primary": false,
+                    "ap1ID": 1726080307409,
+                    "ap2ID": 1726079957022
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "x",
+                    "ap2Primary": false,
+                    "ap1ID": 1726080307409,
+                    "ap2ID": 1726080098051
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "y length",
+                    "ap2Primary": false,
+                    "ap1ID": 1726080322795,
+                    "ap2ID": 1726079957022
                 }
             ],
             "fileTypeVersion": 1,
@@ -869,6 +873,13 @@
         },
         {
             "ap1Name": "number or geometry",
+            "ap2Name": "width",
+            "ap2Primary": false,
+            "ap1ID": 1726079289561,
+            "ap2ID": 1726079956628
+        },
+        {
+            "ap1Name": "number or geometry",
             "ap2Name": "depth",
             "ap2Primary": false,
             "ap1ID": 1726079525135,
@@ -880,6 +891,13 @@
             "ap2Primary": false,
             "ap1ID": 1726079525135,
             "ap2ID": 1726078880722
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "depth",
+            "ap2Primary": false,
+            "ap1ID": 1726079525135,
+            "ap2ID": 1726079956628
         }
     ],
     "unitsKey": "Inches",
